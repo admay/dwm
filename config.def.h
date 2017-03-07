@@ -3,9 +3,9 @@
 /* appearance */
 static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 static const char termfont[]        = "-*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*";
-static const char normbordercolor[] = "#4B5864"; /* unselected border color */
-static const char normbgcolor[]     = "#4B5864"; /* unselected bg color, uncludes window tags */
-static const char normfgcolor[]     = "#BBB6B0"; /* unselected font color */
+static const char normbordercolor[] = "#4B5864";
+static const char normbgcolor[]     = "#4B5864";
+static const char normfgcolor[]     = "#BBB6B0";
 static const char selbordercolor[]  = "#4B5864";
 static const char selbgcolor[]      = "#4B5864";
 static const char selfgcolor[]      = "#9E8774";
