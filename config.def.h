@@ -3,24 +3,24 @@
 /* appearance */
 static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 static const char termfont[]        = "-*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*";
-static const char normbordercolor[] = "#4B5864";
-static const char normbgcolor[]     = "#4B5864";
-static const char normfgcolor[]     = "#BBB6B0";
-static const char selbordercolor[]  = "#4B5864";
-static const char selbgcolor[]      = "#4B5864";
-static const char selfgcolor[]      = "#9E8774";
-static const char dmenuprompt[]     = "run for me |";
-static const unsigned int borderpx  = 5;        /* border pixel of windows */
-static const unsigned int snap      = 5;       /* snap pixel */
+static const char normbordercolor[] = "#38323E";
+static const char normbgcolor[]     = "#38323E";
+static const char normfgcolor[]     = "#C4A896";
+static const char selbordercolor[]  = "#38323E";
+static const char selbgcolor[]      = "#38323E";
+static const char selfgcolor[]      = "#A44443";
+static const char dmenuprompt[]     = "run |";
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int snap      = 5;        /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "right", "now", "we", "need" };
+static const char *tags[] = { "to", "hell", "and", "back", "we" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
+	{ "",         NULL,       NULL,       0,            True,        -1 },
 };
 
 /* layout(s) */
@@ -30,8 +30,8 @@ static const Bool resizehints = True; /* True means respect size hints in tiled 
 
 static const Layout layouts[] = {
 	/* symbol      arrange function */
-	{ "to float",  NULL },    /* first entry is default */
-	{ "structure", tile },    /* no layout function means floating behavior */
+	{ "float",     NULL },    /* first entry is default */
+	{ "align",     tile },    /* no layout function means floating behavior */
 	{ "focus",     monocle },
 };
 
@@ -103,4 +103,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
